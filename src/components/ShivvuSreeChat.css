@@ -3,53 +3,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #ffd6e8, #ffeefc, #e6d6ff);
+  background: linear-gradient(135deg, #f4f6f9, #e9eef3, #fdfdfd);
   padding: 20px;
   font-family: "Poppins", sans-serif;
 }
 
 .chat-header {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #d63384;
-  margin-bottom: 10px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
 }
 
 .chat-box {
   width: 100%;
   max-width: 500px;
   height: 450px;
-  background: white;
-  border-radius: 20px;
+  background: #ffffff;
+  border-radius: 16px;
   padding: 15px;
   overflow-y: auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
 }
 
 .chat-bubble {
   max-width: 70%;
-  padding: 10px 15px;
-  border-radius: 18px;
-  margin: 10px 0;
-  line-height: 1.4;
+  padding: 10px 14px;
+  border-radius: 14px;
+  margin: 8px 0;
+  line-height: 1.5;
   font-size: 14px;
 }
 
+/* ✅ Professional muted blue for Sree */
 .sree-msg {
-  background: #ff4da6;
-  color: white;
+  background: #2563eb;
+  color: #ffffff;
   border-bottom-right-radius: 5px;
-  align-self: flex-end; /* ✅ Now on the right */
+  align-self: flex-end;
   text-align: right;
 }
 
+/* ✅ Neutral gray for Shivvu */
 .shivvu-msg {
-  background: #ffe0f0;
-  color: #5a2a5d;
+  background: #f1f5f9;
+  color: #1e293b;
   border-bottom-left-radius: 5px;
-  align-self: flex-start; /* ✅ Now on the left */
+  align-self: flex-start;
   text-align: left;
 }
 
@@ -64,8 +66,8 @@
   flex: 1;
   resize: none;
   padding: 10px;
-  border: 1px solid #ffb3d9;
-  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
   outline: none;
   font-size: 14px;
 }
@@ -73,20 +75,20 @@
 .chat-input button {
   margin-left: 10px;
   padding: 10px 16px;
-  background: #ff4da6;
+  background: #2563eb;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 500;
+  transition: background 0.3s;
 }
 
 .chat-input button:hover {
-  background: #e60073;
+  background: #1d4ed8;
 }
 
 .typing {
-  color: #d63384;
+  color: #475569;
   font-style: italic;
 }

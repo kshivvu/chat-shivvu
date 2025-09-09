@@ -17,7 +17,7 @@ export default function ShivvuSreeChat() {
     setLoading(true);
 
     try {
-      const finalPrompt = `You are Shivvu, the loving, playful boyfriend of Sree... Respond in 2-3 lines max. Now respond to: ${prompt}`;
+      const finalPrompt = `try to respond in few lines only 8-10 lines. Now respond to: ${prompt}`;
 
       const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
       const result = await model.generateContent(finalPrompt);
@@ -33,7 +33,7 @@ export default function ShivvuSreeChat() {
       console.error(error);
       setMessages((prev) => [
         ...prev,
-        { sender: "shivvu", text: "Oops, baby! Something went wrong 😅" },
+        { sender: "shivvu", text: "Oops,  Something went wrong 😅" },
       ]);
     }
 
@@ -42,7 +42,7 @@ export default function ShivvuSreeChat() {
 
   return (
     <div className="chat-container">
-      <h2 className="chat-header">💖 Your Shivvu 💖</h2>
+      <h2 className="chat-header">Sasta GPT</h2>
 
       <div className="chat-box">
         {messages.map((msg, idx) => (
@@ -52,7 +52,7 @@ export default function ShivvuSreeChat() {
               msg.sender === "sree" ? "sree-msg" : "shivvu-msg"
             }`}
           >
-            <strong>{msg.sender === "sree" ? "Sree 💖" : "Shivvu 💕"}</strong>
+            <strong>{msg.sender === "sree" ? "YOU" : "Jarvis"}</strong>
             <p>{msg.text}</p>
           </div>
         ))}
@@ -67,7 +67,7 @@ export default function ShivvuSreeChat() {
           placeholder="Talk to Shivvu..."
         />
         <button type="submit" disabled={loading}>
-          {loading ? "💭..." : "❤️ Send"}
+          {loading ? "💭..." : " Send"}
         </button>
       </form>
     </div>
