@@ -64,7 +64,7 @@ export default function ShivvuSreeChat() {
           rows="2"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-          placeholder="Talk to Shivvu..."
+          placeholder="Type Something..."
         />
         <button type="submit" disabled={loading}>
           {loading ? "💭..." : " Send"}
